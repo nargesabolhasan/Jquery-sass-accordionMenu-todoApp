@@ -9,4 +9,22 @@
   margin: 0px 0px;
 }
 
+#accordion_wrapper ul li a {
+  padding: 12px;
+  color: white;
+  display: inline-block;
+  background-color: #007c80;
+  border-color: #80007a;
+}
+
+#accordion_wrapper ul li a.active {
+  background-color: #80007a;
+  border-color: #80007a;
+}
+
+#accordion_wrapper .content {
+  background: #fbfbfb;
+  display: none;
+}
+
 /*# sourceMappingURL=2.css.map */
