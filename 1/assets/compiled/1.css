@@ -3,4 +3,14 @@
   margin-top: 100px;
 }
 
+.bg-success {
+  background-color: #35af53 !important;
+  border-color: #dddcdc !important;
+}
+
+.btn-success {
+  background-color: #35af53 !important;
+  border-color: #dddcdc !important;
+}
+
 /*# sourceMappingURL=1.css.map */

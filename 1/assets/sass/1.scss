@@ -5,3 +5,17 @@
 .c-center{
     @include center;
 };
+
+$success-color:#35af53;
+$white-color:#dddcdc;
+@mixin btn-color( $color,$color2) {
+  background-color: $color !important; 
+  border-color: $color2 !important;
+}
+
+.bg-success{
+    @include btn-color( $success-color,$white-color)
+}
+.btn-success{
+    @include btn-color( $success-color,$white-color)
+}
