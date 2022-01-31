@@ -1,0 +1,31 @@
+$blue:rgb(0, 124, 128);
+$pink:rgb(128, 0, 122);
+$white:rgb(255, 255, 255);
+
+@mixin design($color,$color2){
+    @if($color){
+        background-color:$color;
+    }
+    @if($color2){
+        border-color:$color2;
+    }
+        
+};
+
+@mixin layout($width,$margin:0px 0px){
+    @if($width){
+    width:$width;
+    }
+    @if($margin){
+        margin:$margin;
+    }
+};
+
+#accordion_wrapper {
+    @include layout(500px, 100px 800px);
+};
+#accordion_wrapper ul li {
+    list-style: none;
+    @include layout(400px);
+};
+

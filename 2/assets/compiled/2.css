@@ -1,0 +1,12 @@
+#accordion_wrapper {
+  width: 500px;
+  margin: 100px 800px;
+}
+
+#accordion_wrapper ul li {
+  list-style: none;
+  width: 400px;
+  margin: 0px 0px;
+}
+
+/*# sourceMappingURL=2.css.map */
