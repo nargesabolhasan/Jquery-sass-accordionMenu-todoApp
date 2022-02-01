@@ -18,26 +18,26 @@ $(document).ready(function () {
             </button>
         </th>
         <!-------------------inputs at table------------------->
-        <td class="border border-right border-secondary"><input type="text"></td>
-        <td class="border border-right border-secondary"><input type="text"></td>
+        <td class="border border-right border-secondary"><input class="input-txt" type="text"></td>
+        <td class="border border-right border-secondary"><input class="input-txt" type="text"></td>
         <td clsss="mytr border border-right border-secondary">
             <!-------------------radio at table-------------------->
             <div class="radio-group1 d-flex flex-row justify-content-around">
                 <!------New (radio)--------->
                 <label >
-                    <input type="radio" name="group_1" id="opt1" value="1" />
+                    <input type="radio" name="group_1" class="opt1" value="1" />
                     New
                 </label>
 
                 <!-----In progress(radio)---->
                 <label >
-                    <input type="radio" name="group_1" id="opt2" value="2" />
+                    <input type="radio" name="group_1" class="opt2" value="2" />
                     In progress
                 </label>
 
                 <!-------Confirmed(radio)----->
                 <label >
-                    <input type="radio" name="group_1" id="opt3" value="3" />
+                    <input type="radio" name="group_1" class="opt3" value="3" />
                     Confirmed
                 </label>
 
@@ -62,6 +62,22 @@ $(document).ready(function () {
         $(thisRow).clone().insertAfter(thisRow).val("")
         .children().children().children().children().attr('name',`group${counter}`)
     });
-    //...........................................
+    //................. confirmed ....................
+    $(".opt3").click( function (){
+         $('.input-txt').prop('placeholder',"Disabled input")
+                        .prop('disabled',true)
 
+
+    })
+    //................. undoDisabled ....................
+    function undoDisabled() {
+         $('.input-txt').prop('placeholder',"")
+        .prop('disabled',false)
+    }
+        
+        $(function() {
+          $('.opt1').click(undoDisabled);
+          $('.opt2').click(undoDisabled) ;
+        }); 
+ 
 });
