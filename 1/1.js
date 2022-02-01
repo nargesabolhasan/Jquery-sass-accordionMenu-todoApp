@@ -1,5 +1,7 @@
 let counterT = document.getElementById("column1").innerText;
 let counter=1
+let tr=$('tr').length
+console.log(tr)
 
 $(document).ready(function () {
     //.........add Row...............
@@ -69,7 +71,7 @@ $(document).ready(function () {
 
 
     })
-    //................. undoDisabled ....................
+    //................. undoDisabled ..................
     function undoDisabled() {
          $('.input-txt').prop('placeholder',"")
         .prop('disabled',false)
@@ -79,5 +81,7 @@ $(document).ready(function () {
           $('.opt1').click(undoDisabled);
           $('.opt2').click(undoDisabled) ;
         }); 
- 
+
+    //..................................................
+    
 });
